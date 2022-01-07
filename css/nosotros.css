@@ -1,0 +1,114 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+h1{
+    font-size: 1.6em;
+    text-align: center;
+    padding: .8em;
+}
+
+h2{
+    font-size:1.5em;
+}
+
+p{
+    font-size: 1em;
+}
+
+body{
+    font-size: 70%;
+}
+
+
+.primer{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.primer article{
+    margin: .6em;
+    text-align: justify;
+}
+
+.segundo{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.segundo article{
+    margin: 1.5em auto;
+}
+
+.segundo img{
+    width: 45%;
+    max-width: 100%;
+    height: auto;
+    margin: 1em;
+    border-radius: 50%;
+}
+
+
+
+@media screen and (min-width:47em){
+
+    body{
+        font-size: 95%;
+    }
+
+
+    .primer{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .primer article{
+        width: 40%;
+        text-align: justify;
+    }
+
+  
+}
+
+@media screen and (min-width:47em){
+  
+    .segundo{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .segundo article{
+        width: 33%;
+    }
+}
+
+@media screen and (min-width:60em) and (max-width:90em){
+    
+    .primer{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .primer article{
+        width: 40%;
+        text-align: justify;
+    }
+
+    .segundo{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .segundo article{
+        width: 33%;
+    }
+
+}
+
+/*  #002351     #FE1617  */

@@ -1,0 +1,262 @@
+h1{
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    letter-spacing: 0.4em;
+    font-size: 2em;
+    border-style: none none solid none;
+    margin-bottom: 2em;  
+}
+
+h2{
+    text-align: center;
+    margin-bottom: 1em;
+    font-size: 2em;
+    color: black;
+}
+
+.wss{
+    position: fixed;
+    bottom: 2%;
+    right: 2%;
+    z-index: 1;
+}
+.wss img{
+    width: 4em;
+    border-radius: 50%;
+}
+.slider img{
+    max-width: 100%;
+    height: 35em;
+    width: 100%;
+}
+
+/*********/
+.primaria{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    
+}
+.primaria img{
+    width: 10em;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 50%;
+    background-color: #00235165;
+    margin-bottom: 15px;
+}
+.primaria article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1em;
+}
+.primaria a{
+    padding: 10px;
+    text-decoration: none;
+    background: #FE1617;
+    color: white;
+    border-radius: 7px;
+    font-weight: bold;
+}
+.primaria a:hover{
+    background: #002351;
+    color: white;
+    font-weight: bold;
+    transform: scale(1.3);
+    transition: 0.5s;
+}
+/******/
+.secundaria{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.secundaria article{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/*
+.secundaria article{
+    width: calc(25% - 1em);;
+}
+*/
+.secundaria img{
+    width: 20em;
+    /*width: 100%;*/
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 14.4em;
+    border-radius: 5%;
+}
+.secundaria iframe{
+    max-width: 100%;
+    width: 20em;
+    /*width 100%
+    height: 14.4em;*/
+    margin-bottom: 2em;
+    border-radius: 5%;
+}
+.ubicacion{
+    position: relative;
+    bottom: 2.5em;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.664);
+    color: white;
+    width: 70%;
+    text-align: right;
+    padding:.3em;
+}
+.boton{
+    color: #fff;
+    text-decoration: none;
+    background-color: #fe1617;
+    border-radius: .3em;
+    padding: .3em;
+    margin-bottom: 1em;
+}
+
+.contain-form{
+    background-color: grey;
+    width: 100%;
+    margin: 0 auto;
+    padding: 1.5em;
+}
+
+.contain-form form > * {
+    padding: .5em;
+}
+
+.contain-form form button,
+.contain-form form input,
+.contain-form form select{
+    width: 100%;
+    padding: .5em;
+}
+
+.contain-form form input,
+.contain-form form select{
+    margin-top: .5em;
+    border-radius: 0.5em;
+    background-color: #d8d8d8;
+}
+.contain-form form label{
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.b p{
+    font-size: 1.3em;
+}
+
+.inscribite-boton{
+    background-color: #D91828;
+    color:#fff;
+    cursor: pointer;
+    border-radius: 0.4em;
+    margin-top: 1em;
+}
+
+.inscribite-boton a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    display: block;
+    max-width: 100%;
+}
+
+
+
+
+
+@media screen and (min-width:48em){
+    .primaria{
+        flex-direction: row;
+        justify-content: space-around;
+        margin-bottom: 1em;
+    }
+
+    .secundaria {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .secundaria article{
+        margin: 0 .3em
+    }
+    
+}
+
+@media screen and (min-width:60em){
+    
+    .inscribite-boton:hover{
+        transform: scale(1.2);
+        transition: 1s;
+        background-color: #002351;
+    }
+
+    .primaria a:hover{
+        background: #002351;
+        color: white;
+        font-weight: bold;
+        transform: scale(1.2);
+        transition: 0.3s;
+    }
+    .contain-form form {
+        display: grid;
+        margin: 0 auto; 
+        grid-template-columns: 1fr 1fr; 
+        grid-template-rows: 1fr 1fr 1fr 1fr; 
+        gap: 0px 0px; 
+        grid-template-areas: 
+          "a c "
+          "b d "
+          "b e "
+          "b f "; 
+      }
+      .a { grid-area: a; }
+      .b { grid-area: b; }
+      .c { grid-area: c; }
+      .d { grid-area: d; }
+      .e { grid-area: e; }
+      .f {
+        display: grid; 
+        grid-template-columns: 1fr 1fr; 
+        grid-template-rows: 1fr; 
+        align-items: center;
+        gap: 0px 0px; 
+        grid-template-areas: 
+          "ff g"; 
+        grid-area: f; 
+      }
+      .ff { grid-area: ff; }
+      .g { grid-area: g; 
+        width: 60%;
+        margin: auto;
+      }
+
+      .secundaria {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .secundaria article{
+        margin: 0 .3em
+    }
+      
+}

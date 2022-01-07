@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendario</title>
+    <script src="https://kit.fontawesome.com/950202ed20.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway&display=swap" rel="stylesheet">
+    
+    
+    <link rel="stylesheet" href="css/calendario.css">
+    <link rel="stylesheet" href="css/index.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/flitrar-calendario.js"></script>
+
+    <script src="js/navegador.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <div class="logoletras">
+            <a href="index.html"><img src="img/logo.png" alt="fotito"></a>
+            <p>EDUCACION INTELIGENTE</p>
+        </div>
+        <div class="redesSociales">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+        <nav class="navegador">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="establecimientos.html">Establecimientos</a></li>
+                <li><a href="inscripccion.html">Inscripcion</a></li>
+                <li><a href="calendario-de-cursos.html">Calendario</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <a class="desplegable"></a>
+    </header>
+
+    <main>
+        <h2 class="calendario-cursos">CALENDARIO DE CURSOS</h2>
+        <div class="lista-desplegable">
+            
+            <label for="establecimientos">Filtrar por: </label>
+
+        <select name="establecimiento" id="establecimiento">
+            <option value="0">Establecimientos</option>
+            <option value="Santa">Santa Rosa de Lima</option>
+            <option value="Institucional">Institucional Modelo</option>
+            <option value="Larre">Larre</option>
+            <option value="Pizzurno">Pizzurno</option>
+        </select>
+
+        <select name="idiomas" id="idiomas">
+            <option value="0">Idiomas</option>
+            <option value="Ingles">Ingl&eacute;s</option>
+            <option value="Aleman">Alem&aacute;n</option>
+            <option value="Portugues">Portugu&eacute;s</option>
+            <option value="Coreano">Coreano</option>
+            
+        </select>
+        <button id="filtrar" class="filtrar">Filtrar</button>
+        </div>
+
+
+        <h2>MARZO</h2>
+        <section class="mes" id="mes">
+            
+            <article class="Santa Ingles">
+                <div class="imagen">
+                    <img src="img/ingles.png" alt="imagen de inglaterra">
+                </div>
+                <div class="curso-descripcion">
+                <h3>INGL&Eacute;S - NIVEL 1</h3>
+                <p>Modalidad: Online</p>
+                <p>Día y horario: </p>
+                <p>Fecha de inicio</p>
+                <p>Sede: <a href="establecimientos.html">Santa Rosa de Lima</a></p>
+                <p class="precio" >Precio: $0000</p>
+                <input class="boton" type="submit" value="Inscribirse">
+                </div>
+               
+            </article>
+
+            <article class="Institucional Aleman">
+                <div class="imagen"><img src="img/aleman.png" alt="imagen de alemania"></div>
+                <div class="curso-descripcion"><h3>ALEM&Aacute;N - NIVEL 1</h3>
+                <p>Modalidad: Online</p>
+                <p>Día y horario</p>
+                <p>Fecha de inicio</p>
+                <p>Sede: <a href="establecimientos.html">Institucional Modelo</a></p>
+                <p class="precio">Precio: $0000</p>
+                <input class="boton" type="submit" value="Inscribirse">
+            </div>
+                
+    
+                
+            </article>
+            <article class="Larre Portugues">
+                <div class="imagen"><img src="img/portugues.png" alt="imagen de portugal"></div>
+                <div class="curso-descripcion"><h3>PORTUGU&Eacute;S - NIVEL 1</h3>
+                <p>Modalidad: Online</p>
+                <p>Día y horario</p>
+                <p>Fecha de inicio</p>
+                <p>Sede: <a href="establecimientos.html">Larre</a></p>
+                <p class="precio">Precio: $0000</p>
+                <input class="boton" type="submit" value="Inscribirse">
+            </div>
+                
+                
+
+                
+            </article>
+
+            <article class="Pizzurno Coreano">
+                <div class="imagen"><img src="img/coreano.png" alt="imagen de corea"></div>
+                <div class="curso-descripcion"> <h3>COREANO - NIVEL 1</h3>
+                <p>Modalidad: Online</p>
+                <p>Día y horario</p>
+                <p>Fecha de inicio</p>
+                <p>Sede: <a href="establecimientos.html">Pizzurno</a></p>
+                <p class="precio">Precio: $0000</p>
+                <input class="boton" type="submit" value="Inscribirse"></div>
+
+                
+            </article>
+        </section>
+
+        <h2>ABRIL</h2>
+        <section class="mes" id="mes2">
+            
+            <article class="Santa Ingles">
+                <div class="imagen"><img src="img/ingles.png" alt="imagen de inglaterra"></div>
+                <div class="curso-descripcion"> <h3>INGL&Eacute;S - NIVEL 2</h3>
+                <p>Modalidad: Presencial</p>
+                <p>Día y horario</p>
+                <p>Fecha de inicio</p>
+                <p>Sede: <a href="establecimientos.html">Santa Rosa de Lima</a></p>
+                <p class="precio">Precio: $0000</p>
+                <input class="boton" type="submit" value="Inscribirse">
+            </div>
+
+                
+            </article>
+            <article class="Institucional Aleman">
+                <div class="imagen"> <img src="img/aleman.png" alt="imagen de alemania"></div>
+                <div class="curso-descripcion">
+                <h3>ALEM&Aacute;N - NIVEL 2</h3>
+                <p>Modalidad: Presencial</p>
+                <p>Día y horario</p>
+                <p>Fecha de inicio</p>
+                <p>Sede: <a href="establecimientos.html">Institucional Modelo</a></p>
+                <p class="precio">Precio: $0000</p>
+                <input class="boton" type="submit" value="Inscribirse">
+            </div>
+
+                
+            </article>
+            <article class="Larre Portugues">
+                <div class="imagen"><img src="img/portugues.png" alt="imagen de portugal"></div>
+                <div class="curso-descripcion"><h3>PORTUGU&Eacute;S - NIVEL 2</h3>
+                <p>Modalidad: Presencial</p>
+                <p>Día y horario</p>
+                <p>Fecha de inicio</p>
+                <p>Sede: <a href="establecimientos.html">Larre</a></p>
+                <p class="precio">Precio: $0000</p>
+                <input class="boton" type="submit" value="Inscribirse">
+            </div>
+
+                
+            </article>
+            <article class="Pizzurno Coreano">
+                <div class="imagen"><img src="img/coreano.png" alt="imagen de corea"></div>
+                <div class="curso-descripcion"><h3>COREANO - NIVEL 2</h3>
+                <p>Modalidad: Presencial</p>
+                <p>Día y horario</p>
+                <p>Fecha de inicio</p>
+                <p>Sede: <a href="establecimientos.html">Pizzurno</a></p>
+                <p class="precio">Precio: $0000</p>
+                <input class="boton" type="submit" value="Inscribirse">
+            </div>
+                
+                
+            </article>
+        </section>
+
+    </main>
+
+    <footer>
+        <div>
+            <p class="resaltador">Datos del grupo:</p>
+            <p>Aguirre, Celeste Melina - DNI 42.102.140</p>
+            <p>Manchini, Juan Manuel - DNI 42.997.249</p>
+            <p>Mitria, Damian Nahuel - DNI 34.277.101</p>
+        </div>
+        <div>
+            <p class="resaltador">Menu inferior</p>
+            <p><a href="establecimientos.html">Establecimiento</a></p>
+            <p><a href="inscripccion.html">Inscripcion</a></p>
+            <p><a href="calendario-de-cursos.html">Calendario</a></p>
+            <p><a href="contacto.html">Contacto</a></p>
+        </div>
+        <div class="separar">
+            <p class="resaltador">Redes sociales:</p>
+
+            <div class="iconos">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
+    

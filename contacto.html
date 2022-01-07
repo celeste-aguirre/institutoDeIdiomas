@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <script src="https://kit.fontawesome.com/950202ed20.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/contacto.css">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Contacto | Instituto de Idiomas</title>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/validar-formulario-contacto.js"></script>
+
+    <script src="js/navegador.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="logoletras">
+            <a href="index.html"><img src="img/logo.png" alt="fotito"></a>
+            <p>EDUCACION INTELIGENTE</p>
+        </div>
+        <div class="redesSociales">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+        <nav class="navegador">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="establecimientos.html">Establecimientos</a></li>
+                <li><a href="inscripccion.html">Inscripcion</a></li>
+                <li><a href="calendario-de-cursos.html">Calendario</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <a class="desplegable"></a>
+    </header>
+    <main>
+        <section class="contenedor-contacto">
+            
+            <article class="formulario">
+                <h2>CONTACTO</h2>
+            
+                <form action="#" name="form" id="form">
+
+                <input type="text" name="nombre" id="nombre" placeholder="Nombre" autofocus>
+                <input type="text" id="apellido" name="apellido" placeholder="Apellido">
+                <input type="text" id="telefono" name="telefono" placeholder="Telefono, ejemplo: 4444-4444">
+                <input type="text" name="correo" id="correo" placeholder="Correo electronico">
+                <input type="text" name="asunto" id="asunto" placeholder="Asunto">
+                <textarea name="consulta" id="consulta" placeholder="Deje su consulta" maxlength="1000"></textarea>
+                <div class="d-flex">
+                    <p class="float-right"><span id="contador">0</span>/1000</p>
+                </div>
+                <div class="mover-boton">
+                    <input type="submit" value="Enviar" class="boton">
+                </div>
+
+                <div id="mensaje" class="error"></div>
+                <div class="modal"><p>Envío Exitoso</p>
+                    <button class="cerrar">x</button>
+                </div>
+                </form>
+
+           </article>
+
+           
+           <article>
+            <h2>DATOS DE CONTACTO</h2>
+                
+                <p>Direccion: Aca la direccion 1234</p>
+                <p>Telefono: 4444 4444</p>
+                <p>Celular: 54+ 11 2222 3333</p>
+                <p>Email: instituto@intituto.com</p>
+                <p>Web: <a href="#">InstitutoDeIdiomas.com</a></p>
+
+            <div class="redes-sociales-contacto">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </article>
+        
+        
+        </section>
+        <section class="contenedor-mapa">
+            <article class="mapa">
+            <h2>UBICACI&Oacute;N</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.3699819774633!2d-58.564889822459214!3d-34.67061058053796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc62cc3ef7083%3A0x8867107f425fade5!2sUniversidad%20Nacional%20de%20La%20Matanza!5e0!3m2!1ses!2sar!4v1631888167070!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </article>
+        </section>
+        
+    </main>
+
+    <footer>
+        <div>
+            <p class="resaltador">Datos del grupo:</p>
+            <p>Aguirre, Celeste Melina - DNI 42.102.140</p>
+            <p>Manchini, Juan Manuel - DNI 42.997.249</p>
+            <p>Mitria, Damian Nahuel - DNI 34.277.101</p>
+        </div>
+        <div>
+            <p class="resaltador">Menu inferior</p>
+            <p><a href="establecimientos.html">Establecimiento</a></p>
+            <p><a href="inscripccion.html">Inscripcion</a></p>
+            <p><a href="calendario-de-cursos.html">Calendario</a></p>
+            <p><a href="contacto.html">Contacto</a></p>
+        </div>
+        <div class="separar">
+            <p class="resaltador">Redes sociales:</p>
+
+            <div class="iconos">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
+    
